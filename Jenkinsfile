@@ -1,7 +1,10 @@
 pipeline {
     agent {
         label "jenkins-ec2-agent" 
-    }    
+    }
+    environment {
+        GIT_CURL_VERBOSE=1
+    }
     stages {
         stage('Build') { 
             agent {
