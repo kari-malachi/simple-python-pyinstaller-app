@@ -1,5 +1,5 @@
 pipeline {
-    agent none 
+    agent jenkins-ec2-agent 
     stages {
         stage('Build') { 
             agent {
