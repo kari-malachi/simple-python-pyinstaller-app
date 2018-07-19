@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "jenkins-ecs-agents" 
+        label "jenkins-ecs-agent" 
     }
     environment {
         GIT_CURL_VERBOSE=1
